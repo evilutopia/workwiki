@@ -63,3 +63,38 @@ Traceback (most recent call last):
 OSError: [Errno 1] Operation not permitted: '/var/folders/7j/19zzrqpn5dl6ghw1pms6k2m80000gp
 
 解决：sudo pip install matplotlib --upgrade --ignore-installed six
+
+jupyter 安装错误
+
+
+sudo pip install --upgrade ipython --ignore-installed six
+ 
+Exception:
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/pip/basecommand.py", line 209, in main
+    status = self.run(options, args)
+  File "/Library/Python/2.7/site-packages/pip/commands/install.py", line 317, in run
+    prefix=options.prefix_path,
+  File "/Library/Python/2.7/site-packages/pip/req/req_set.py", line 732, in install
+    **kwargs
+  File "/Library/Python/2.7/site-packages/pip/req/req_install.py", line 835, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File "/Library/Python/2.7/site-packages/pip/req/req_install.py", line 1030, in move_wheel_files
+    isolated=self.isolated,
+  File "/Library/Python/2.7/site-packages/pip/wheel.py", line 376, in move_wheel_files
+    clobber(source, dest, False, fixer=fixer, filter=filter)
+  File "/Library/Python/2.7/site-packages/pip/wheel.py", line 315, in clobber
+    ensure_dir(destdir)
+  File "/Library/Python/2.7/site-packages/pip/utils/__init__.py", line 83, in ensure_dir
+    os.makedirs(path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py", line 150, in makedirs
+    makedirs(head, mode)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py", line 150, in makedirs
+    makedirs(head, mode)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py", line 157, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 1] Operation not permitted: '/System/Library/Frameworks/Python.framework/Versions/2.7/share'
+
+解决方案：pip install ipython --user -U
+解决：sudo pip install matplotlib --upgrade --ignore-installed six作物
+解决：sudo pip install matplotlib --upgrade --ignore-installed six
