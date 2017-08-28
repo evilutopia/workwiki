@@ -10,3 +10,56 @@ http://openbookproject.net/thinkcs/python/english2e/
 http://openbookproject.net/thinkcs/python/english3e/
 https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
 
+
+Pandas 使用问题跟踪
+
+pip install matplotlib --upgrade --user
+I dont get any error but my program fails saying
+
+Traceback (most recent call last):
+  File "forest.py", line 22, in <module>
+    matplotlib.style.use('ggplot')
+AttributeError: 'module' object has no attribute 'style'
+when I try to upgrade matplotlib without --user I get following error
+
+$ pip install matplotlib --upgrade 
+Collecting matplotlib
+  Using cached matplotlib-1.5.2-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+Requirement already up-to-date: cycler in /Users/vangapellisanthosh/Library/Python/2.7/lib/python/site-packages (from matplotlib)
+Collecting pyparsing!=2.0.0,!=2.0.4,!=2.1.2,>=1.5.6 (from matplotlib)
+  Using cached pyparsing-2.1.8-py2.py3-none-any.whl
+Collecting pytz (from matplotlib)
+  Using cached pytz-2016.6.1-py2.py3-none-any.whl
+Collecting numpy>=1.6 (from matplotlib)
+  Using cached numpy-1.11.1-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl
+Collecting python-dateutil (from matplotlib)
+  Using cached python_dateutil-2.5.3-py2.py3-none-any.whl
+Collecting six (from cycler->matplotlib)
+  Using cached six-1.10.0-py2.py3-none-any.whl
+Installing collected packages: pyparsing, pytz, numpy, six, python-dateutil, matplotlib
+  Found existing installation: pyparsing 2.0.1
+    DEPRECATION: Uninstalling a distutils installed project (pyparsing) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+    Uninstalling pyparsing-2.0.1:
+Exception:
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/pip-8.1.2-py2.7.egg/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/Library/Python/2.7/site-packages/pip-8.1.2-py2.7.egg/pip/commands/install.py", line 317, in run
+    prefix=options.prefix_path,
+  File "/Library/Python/2.7/site-packages/pip-8.1.2-py2.7.egg/pip/req/req_set.py", line 736, in install
+    requirement.uninstall(auto_confirm=True)
+  File "/Library/Python/2.7/site-packages/pip-8.1.2-py2.7.egg/pip/req/req_install.py", line 742, in uninstall
+    paths_to_remove.remove(auto_confirm)
+  File "/Library/Python/2.7/site-packages/pip-8.1.2-py2.7.egg/pip/req/req_uninstall.py", line 115, in remove
+    renames(path, new_path)
+  File "/Library/Python/2.7/site-packages/pip-8.1.2-py2.7.egg/pip/utils/__init__.py", line 267, in renames
+    shutil.move(old, new)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/shutil.py", line 302, in move
+    copy2(src, real_dst)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/shutil.py", line 131, in copy2
+    copystat(src, dst)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/shutil.py", line 103, in copystat
+    os.chflags(dst, st.st_flags)
+OSError: [Errno 1] Operation not permitted: '/var/folders/7j/19zzrqpn5dl6ghw1pms6k2m80000gp
+
+解决：sudo pip install matplotlib --upgrade --ignore-installed six
