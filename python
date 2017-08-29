@@ -96,3 +96,6 @@ Traceback (most recent call last):
 OSError: [Errno 1] Operation not permitted: '/System/Library/Frameworks/Python.framework/Versions/2.7/share'
 
 解决方案：pip install ipython --user -U
+
+使用jinja模版
+https://realpython.com/blog/python/primer-on-jinja-templating/
