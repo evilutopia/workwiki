@@ -99,3 +99,7 @@ OSError: [Errno 1] Operation not permitted: '/System/Library/Frameworks/Python.f
 
 使用jinja模版
 https://realpython.com/blog/python/primer-on-jinja-templating/
+
+
+virtualenvwrapper 
+https://virtualenvwrapper.readthedocs.io/en/latest/
