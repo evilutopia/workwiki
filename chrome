@@ -3,3 +3,7 @@ vimium
 epubreader
 epubpress
 asciidoc
+常用快捷键
+
+command+l 跳转至地址栏
+tab       从地址栏返回页面
