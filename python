@@ -1,4 +1,4 @@
-python 入门基础教程
+jpython 入门基础教程
 http://www.runoob.com/python/python-tutorial.html
 http://wiki.jikexueyuan.com/project/start-learning-python/
 https://amaozhao.gitbooks.io/pandas-notebook/content/pandas%E4%B8%AD%E7%9A%84%E7%BB%98%E5%9B%BE%E5%87%BD%E6%95%B0.html
@@ -105,3 +105,7 @@ https://realpython.com/blog/python/primer-on-jinja-templating/
 
 virtualenvwrapper 
 https://virtualenvwrapper.readthedocs.io/en/latest/
+
+
+python 编码规范
+http://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules/
