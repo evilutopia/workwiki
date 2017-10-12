@@ -1,2 +1,5 @@
 # 查询服务器信息
 CPU 信息:https://ark.intel.com/
+
+Differences between physical CPU vs logical CPU vs Core vs Thread vs Socket
+http://www.daniloaz.com/en/differences-between-physical-cpu-vs-logical-cpu-vs-core-vs-thread-vs-socket/
