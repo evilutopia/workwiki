@@ -97,3 +97,5 @@ $4 = {__data = {__lock = 2, __count = 1, __owner = 19566, __nusers = 1, __kind =
 
 And, we're waiting on thread 69 [tid 19566]. Deadlock.
 </pre>
+
+LWP:[https://en.wikipedia.org/wiki/Light-weight_process]
