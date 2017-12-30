@@ -1,7 +1,7 @@
 
 ITerm2
 ---------------------------
-
+修改字体，修改配色方案
 
 zsh
 ---------------------------
@@ -15,5 +15,8 @@ install Powerline Fonts
 http://huifeng.me/2015/08/25/Made-iTerm2-lovely-and-amazing/
 </pre>
 
-vim
+vim+spacevim
+---------------------------
+
+cmake
 ---------------------------
