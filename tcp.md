@@ -12,6 +12,9 @@ https://www.ibm.com/support/knowledgecenter/zh/ssw_aix_71/com.ibm.aix.performanc
 
 https://docs.azure.cn/zh-cn/articles/azure-operations-guide/virtual-network/aog-virtual-network-iperf-bandwidth-test
 
+# quick ack 无效
+https://medium.com/@fcamel/linux-%E4%B8%8A-tcp-quickack-%E7%9A%84%E6%95%88%E6%9E%9C-86521d5f1190
+
 # 神秘的40毫秒延迟与 TCP_NODELAY
 
 最近的业余时间几乎全部献给 breeze 这个多年前挖 下的大坑—— 一个异步 HTTP Server。
