@@ -8,6 +8,9 @@ https://www.ibm.com/support/knowledgecenter/zh/ssw_aix_71/com.ibm.aix.performanc
 
 引用：http://jerrypeng.me/2013/08/mythical-40ms-delay-and-tcp-nodelay/
 
+# iperf
+
+https://docs.azure.cn/zh-cn/articles/azure-operations-guide/virtual-network/aog-virtual-network-iperf-bandwidth-test
 
 # 神秘的40毫秒延迟与 TCP_NODELAY
 
