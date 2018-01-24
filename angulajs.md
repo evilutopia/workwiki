@@ -4,6 +4,10 @@ ng-animate : Animation when model changes
 -----------------------------------------
 http://jsfiddle.net/AnandVishnu/c5p39/
 
+resizable-div-directive
+-----------------------------------------
+https://stackoverflow.com/questions/18368485/angular-js-resizable-div-directive
+
 <pre>
 
 <div ng-app="myApp">
