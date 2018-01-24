@@ -10,12 +10,12 @@ https://stackoverflow.com/questions/18368485/angular-js-resizable-div-directive
 
 <pre>
 
-<div ng-app="myApp">
+<!--div ng-app="myApp">
     <div ng-controller="AppCtrl">
       <input type="text" ng-model="test.value"></input>
       <span animate-on-change='test.value'>{{test.value | number}}</span>       
     </div>
-</div>
+</div--!>
 
 [animate-on-change] {
   transition: all 1s;
