@@ -1,4 +1,9 @@
 
+code
+-----------------------------------------
+https://code.angularjs.org/
+
+各个插件需要和主版本保持兼容
 
 ng-animate : Animation when model changes
 -----------------------------------------
