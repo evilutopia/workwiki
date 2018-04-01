@@ -25,3 +25,7 @@ cmake
 aclocal not writable 
 
 chmod g+w aclocal
+
+glibtoolize not found, auto conf ....not found
+----------------------------
+brew install automake
