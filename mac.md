@@ -20,3 +20,8 @@ vim+spacevim
 
 cmake
 ---------------------------
+
+
+aclocal not writable 
+
+chmod g+w aclocal
