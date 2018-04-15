@@ -20,8 +20,9 @@ b. 文件编码识别错误， 如文件编码是utf8 但识别为GBK
    -----------------------------
    http://vim.wikia.com/wiki/Making_a_list_of_numbers
    
-   Ctrl+A ， 对数据加1
-   g Ctrl+1,  递增加1
+   Ctrl+a ， 对数据加1
+   g Ctrl+a,  递增加1
+   g Ctrl+x,  递增加1
 
 
 
