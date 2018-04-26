@@ -9,8 +9,7 @@ Tutorial
 
 [TC HowTO](http://tldp.org/HOWTO/Traffic-Control-HOWTO/index.html)
 
-TOS
-http://tldp.org/en/Traffic-Control-HOWTO/ar01s06.html
+
 
 
 TC 入门L1
@@ -18,7 +17,7 @@ TC 入门L1
 
 REF:http://perthcharles.github.io/2015/06/12/tc-tutorial/
 
-Linux内核支持的常见队列
+Linux内核支持的常见队列(http://tldp.org/en/Traffic-Control-HOWTO/ar01s06.html)
 ###
 
 + pfifo_fast: 先进先出队列
