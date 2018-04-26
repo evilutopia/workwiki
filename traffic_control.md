@@ -22,6 +22,8 @@ Linux内核支持的常见队列
 
 ![Missing](https://github.com/evilutopia/workwiki/blob/master/resource/tc-pfifo_fast-qdisc.png)
 
+https://blog.csdn.net/u011641885/article/details/45674633
+
 + TBF(Token Bucket Filter): 令牌桶过滤器
 
 ![Missing](https://github.com/evilutopia/workwiki/blob/master/resource/tc-tbf-qdisc.png)
