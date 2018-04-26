@@ -56,9 +56,12 @@ pfifo_fast
 pfifo_fast是系统默认的队列类型，只起到调度的作用，不对数据流量进行控制。
 其中pfifo中的p是packet的缩写，表示queue的大小计量单位为packet。
 可以通过ip命令查看当前网络队列设置
+
+
 <span style="background-color:yellow">
 # ip link list
 </span>
+
 TBF
 TBF队列通过设置令牌的产生速度来限制数据包的发送。
 
@@ -112,9 +115,7 @@ HTB is an ideal qdisc to use on a link with a know bandwidth
 In theory, the PRIO scheduler is an ideal match for links with variable bandwidth
 Sharing/splitting bandwidth based on flows or IP
 ‘’’
-
 </pre>
-
 
 
 
