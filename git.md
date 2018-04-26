@@ -7,6 +7,11 @@ https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8
 
 github
 ------------------------------------
++ 创建目录
+<pre>
+NewFIle -> 目录名/文件名称
+</pre>
++ 在README中增加图片
 <pre>
 
  我们都知道，当我们在Github中新建一个repository时，一般都会同时创建一个README.md文件，该文件是一个markdown文件，一般用来在你的repository下面说明这个项目的简介。这样会有更多的人来参与了解你的项目。现在我们来实现一下如何在README.md中显示一张图片。
