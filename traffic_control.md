@@ -16,15 +16,23 @@ http://perthcharles.github.io/2015/06/12/tc-tutorial/
 
 Linux内核支持的常见队列有：
 
-pfifo_fast: 先进先出队列
++ pfifo_fast: 先进先出队列
+
 ![Missing](https://github.com/evilutopia/workwiki/blob/master/resource/tc-fifo-qdisc.png)
 
-TBF(Token Bucket Filter): 令牌桶过滤器
+![Missing](https://github.com/evilutopia/workwiki/blob/master/resource/tc-pfifo_fast-qdisc.png)
 
-SFQ(Stochastic Fairness Queueing): 随机公平队列
++ TBF(Token Bucket Filter): 令牌桶过滤器
 
-HTB(Hierarchy Token Bucket): 分层令牌桶
+![Missing](https://github.com/evilutopia/workwiki/blob/master/resource/tc-tbf-qdisc.png)
 
++ SFQ(Stochastic Fairness Queueing): 随机公平队列
+
+![Missing](https://github.com/evilutopia/workwiki/blob/master/resource/tc-sfq-qdisc.png)
+
++ HTB(Hierarchy Token Bucket): 分层令牌桶
+
+![Missing](https://github.com/evilutopia/workwiki/blob/master/resource/tc-htb-borrow.png)
 
 
 
