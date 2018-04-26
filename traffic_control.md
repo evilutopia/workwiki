@@ -31,3 +31,9 @@ sudo tc qdisc add dev eth0 root netem loss 10%
 删除策略：
 sudo tc qdisc del dev eth0 root netem loss 10%
 </pre>
+
+
+
+pfifo_fast队列详解
+-------------------------------------------------------
+https://blog.csdn.net/u011641885/article/details/45674633
