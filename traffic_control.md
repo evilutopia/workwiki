@@ -9,6 +9,9 @@ Tutorial
 
 [TC HowTO](http://tldp.org/HOWTO/Traffic-Control-HOWTO/index.html)
 
+TOS
+http://tldp.org/en/Traffic-Control-HOWTO/ar01s06.html
+
 
 TC 入门L1
 ##
