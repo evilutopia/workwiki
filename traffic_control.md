@@ -5,7 +5,9 @@ Traffic Control
 
 Tutorial
 ##
-http://tldp.org/HOWTO/Traffic-Control-HOWTO/index.html
+[Linux流量控制](http://www.wy182000.com/wordpress/wp-content/uploads/2013/04/intro.html)
+
+[TC HowTO](http://tldp.org/HOWTO/Traffic-Control-HOWTO/index.html)
 
 
 TC 入门L1
