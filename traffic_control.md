@@ -14,6 +14,22 @@ http://perthcharles.github.io/2015/06/12/tc-tutorial/
 
 
 
+Linux内核支持的常见队列有：
+
+pfifo_fast: 先进先出队列
+
+
+TBF(Token Bucket Filter): 令牌桶过滤器
+
+SFQ(Stochastic Fairness Queueing): 随机公平队列
+
+HTB(Hierarchy Token Bucket): 分层令牌桶
+
+
+
+
+
+
 
 
 R:TC 应用
