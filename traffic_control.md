@@ -20,3 +20,14 @@ R:TC 应用
 -------------------------------------------------------
 
 + 模拟网络时延
+<pre>
+增加网络时延
+sudo tc qdisc add dev eth0 root netem delay 1000ms
+删除策略：
+sudo tc qdisc del dev eth0 root netem delay 1000ms
+
+修改丢包率：
+sudo tc qdisc add dev eth0 root netem loss 10%
+删除策略：
+sudo tc qdisc del dev eth0 root netem loss 10%
+</pre>
