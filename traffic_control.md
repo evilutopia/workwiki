@@ -8,7 +8,7 @@ Tutorial
 http://tldp.org/HOWTO/Traffic-Control-HOWTO/index.html
 
 
-R:TC 实践
+TC 入门L1
 ##
 
 REF:http://perthcharles.github.io/2015/06/12/tc-tutorial/
@@ -40,7 +40,7 @@ TC应用场景
 
 <pre>
 本节摘抄自Traffic Control HOWTO.
-
+<code>
 Common traffic control solutions  
   1. Limit total bandwidth to a known rate; TBF, HTB with child class(es).
   2. Limit the bandwidth of a particular user, service or client; HTB classes and classifying with a filter. traffic.
@@ -50,6 +50,7 @@ Common traffic control solutions
   6. Managed oversubscribed bandwidth; HTB with borrowing.
   7. Allow equitable distribution of unreserved bandwidth; HTB with borrowing.
   8. Ensure that a particular type of traffic is dropped; policer attached to a filter with a drop action.
+  </code>
 实践案例
 pfifo_fast
 pfifo_fast是系统默认的队列类型，只起到调度的作用，不对数据流量进行控制。
