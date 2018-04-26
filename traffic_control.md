@@ -1,20 +1,20 @@
 
 
 Traffic Control
-=
+#
 
 Tutorial
-==
+##
 http://tldp.org/HOWTO/Traffic-Control-HOWTO/index.html
 
 
 R:TC 实践
-==
+##
 
 REF:http://perthcharles.github.io/2015/06/12/tc-tutorial/
 
 Linux内核支持的常见队列
-===
+###
 
 + pfifo_fast: 先进先出队列
 
@@ -36,7 +36,7 @@ Linux内核支持的常见队列
 
 
 TC应用场景
-===
+###
 
 <pre>
 本节摘抄自Traffic Control HOWTO.
@@ -120,7 +120,7 @@ Sharing/splitting bandwidth based on flows or IP
 
 
 R:TC 应用
-===
+###
 
 + 模拟网络时延
 <pre>
@@ -138,5 +138,5 @@ sudo tc qdisc del dev eth0 root netem loss 10%
 
 
 pfifo_fast队列详解
-===
+###
 https://blog.csdn.net/u011641885/article/details/45674633
