@@ -35,3 +35,8 @@ do
     echo "$f" ' ' `file -bi "$f"`;
 done    
 </pre>
+
+
+xargs
+-----------------------------
+http://man.linuxde.net/xargs
