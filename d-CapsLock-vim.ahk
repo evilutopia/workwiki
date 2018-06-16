@@ -1,25 +1,24 @@
-; Use d as modifier, map keys outside main keyboard area into main keyboard area.
+; Use CapsLock as modifier, map keys outside main keyboard area into main keyboard area.
 
 SetCapsLockState, AlwaysOff
 
-; d + hjkl (left, down, up, right)
-d & h::SendInput {Blind}{Left}
-d & j::SendInput {Blind}{Down}
-d & k::SendInput {Blind}{Up}
-d & l::SendInput {Blind}{Right}
+; CapsLock + hjkl (left, down, up, right)
+CapsLock & h::SendInput {Blind}{Left}
+CapsLock & j::SendInput {Blind}{Down}
+CapsLock & k::SendInput {Blind}{Up}
+CapsLock & l::SendInput {Blind}{Right}
 
-; Move the Ins/Home/PgUp and Del/End/PgDn to 2x3 keys near the arrows 
-d & p::SendInput {Blind}{Insert}
-d & [::SendInput {Blind}{Home}
-d & ]::SendInput {Blind}{PgUp}
-d & `;::SendInput {Blind}{Delete}
-d & '::SendInput {Blind}{End}
-d & Enter::SendInput {Blind}{PgDn}
+; Move the Ins/Home/PgUp and Del/End/PgDn to 2x3 keys near the arrows
+CapsLock & p::SendInput {Blind}{Insert}
+CapsLock & [::SendInput {Blind}{Home}
+CapsLock & `;::SendInput {Blind}{Delete}
+CapsLock & '::SendInput {Blind}{End}
+CapsLock & Enter::SendInput {Blind}{PgDn}
 
 ; PrtSc/ScrLk/Pause is above the arrows
-d & u::SendInput {Blind}{PrintScreen}
-d & i::SendInput {Blind}{ScrollLock}
-d & o::SendInput {Blind}{Pause}
+CapsLock & u::SendInput {Blind}{PrintScreen}
+CapsLock & i::SendInput {Blind}{ScrollLock}
+CapsLock & o::SendInput {Blind}{Pause}
 
 ; Number row
 CapsLock::send, {Esc}
@@ -36,7 +35,3 @@ CapsLock & 9::SendInput {Blind}{F9}
 CapsLock & 0::SendInput {Blind}{F10}
 CapsLock & -::SendInput {Blind}{F11}
 CapsLock & =::SendInput {Blind}{F12}
-
-
-d::Send, {d}
-
