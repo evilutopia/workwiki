@@ -138,6 +138,72 @@ code --install-extension 插件名称
 
 https://marketplace.visualstudio.com/,  点击想要的插件， 点击  Download Extension 下载插件
 
+
+编译程序
+---------------------------
+
+<pre>
+#include <iostream>
+#include <string>   
+#include <boost/lexical_cast.hpp>
+#include <boost/thread.hpp>
+
+void Counter(int x)
+{
+    while(x > 0)
+    {
+        std::cout << boost::lexical_cast<std::string>(x) << std::endl;
+        --x;
+    }
+    return;
+}
+  
+int main()
+{
+    int x = 10;
+    std::cout << "hello vscode " << boost::lexical_cast<std::string>(x) << std::endl;
+    
+    boost::thread t1(Counter, x);
+
+    t1.join();
+    
+    return 0;
+}
+</pre>
+
+<pre>
+felix@DESKTOP-BNO3JQ3  /f/pworkspace/cpp11
+$ clang++ -lboost_system -lboost_thread main.cpp
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost6thread4joinEv]+0x28): undefined reference to `boost::this_thread::get_id()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost6thread4joinEv]+0x3a): undefined reference to `boost::thread::get_id() const'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost6thread4joinEv]+0xb1): undefined reference to `boost::thread::join_noexcept()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost6threadD2Ev]+0x14): undefined reference to `boost::thread::detach()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZNK5boost6system14error_category12std_category10equivalentEiRKSt15error_condition]+0xf6): undefined reference to `boost::system::generic_category()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZNK5boost6system14error_category12std_category10equivalentEiRKSt15error_condition]+0x12e): undefined reference to `boost::system::generic_category()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZNK5boost6system14error_category12std_category10equivalentERKSt10error_codei]+0xfa): undefined reference to `boost::system::generic_category()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZNK5boost6system14error_category12std_category10equivalentERKSt10error_codei]+0x132): undefined reference to `boost::system::generic_category()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZNK5boost6system14error_category12std_category10equivalentERKSt10error_codei]+0x272): undefined reference to `boost::system::generic_category()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost16thread_exceptionC2EiPKc]+0x2d): more undefined references to `boost::system::generic_category()' follow
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost6thread12start_threadEv]+0x18): undefined reference to `boost::thread::start_thread_noexcept()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost6detail16thread_data_baseC2Ev]+0x11): undefined reference to `vtable for boost::detail::thread_data_base'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.text[_ZN5boost6detail11thread_dataINS_3_bi6bind_tIvPFviENS2_5list1INS2_5valueIiEEEEEEED2Ev]+0xf): undefined reference to `boost::detail::thread_data_base::~thread_data_base()'
+C:\Users\felix\AppData\Local\Temp\main-fcd69f.o:(.rdata[_ZTIN5boost6detail11thread_dataINS_3_bi6bind_tIvPFviENS2_5list1INS2_5valueIiEEEEEEEE]+0x10): undefined reference to `typeinfo for boost::detail::thread_data_base'
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+</pre>
+
+<pre>
+连接的库需要放在后面才能编译
+felix@DESKTOP-BNO3JQ3  /f/pworkspace/cpp11
+$ clang++ main.cpp -lboost_system -lboost_thread
+
+felix@DESKTOP-BNO3JQ3  /f/pworkspace/cpp11
+$
+</pre>
+
+https://stackoverflow.com/questions/15280882/why-undefined-reference-to-boostsystemgeneric-category-even-if-i-do-link
+https://stackoverflow.com/questions/492374/g-in-what-order-should-static-and-dynamic-libraries-be-linked/492498#492498
+
+
 参考资料
 -----------------------------
 https://www.youtube.com/watch?v=TLh--v8OxHE&t=910s&list=PL18844R4xSKTZqTPzz9ZbXiWrcsXsBc9d&index=2
