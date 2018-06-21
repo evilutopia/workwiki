@@ -27,6 +27,9 @@ MSYS2 is a software distro and building platform for Windows
 https://www.msys2.org/
 
 
+配置vscode
+--------------------------
+
 .vscode\c_cpp_properties.json
 --------------------------
 <pre>
@@ -60,8 +63,6 @@ https://www.msys2.org/
 }
 </pre>
 
-配置vscode
---------------------------
 
 launch.json
 --------------------------
@@ -198,10 +199,11 @@ $ clang++ main.cpp -lboost_system -lboost_thread
 
 felix@DESKTOP-BNO3JQ3  /f/pworkspace/cpp11
 $
-</pre>
-
 https://stackoverflow.com/questions/15280882/why-undefined-reference-to-boostsystemgeneric-category-even-if-i-do-link
 https://stackoverflow.com/questions/492374/g-in-what-order-should-static-and-dynamic-libraries-be-linked/492498#492498
+</pre>
+
+
 
 
 参考资料
