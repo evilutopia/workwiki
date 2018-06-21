@@ -1,6 +1,31 @@
 
-GCC & clang on windows with Visual Studio Code + bash terminal + debugging!
+GCC & clang on windows + bash terminal + debugging!
 ==========================
+
+Prerequisites
+-------------------------
++ Install lib by msys2 (mingw, gcc, gdb,... etd.) 
++ Install clang
++ Install vscode
++ Install extension
++ 配置vscode
+
+
+Install lib by msys2 (mingw, gcc, gdb,... etd.) 
+-----------------------
+设置环境变量
+Path
+  C:\msys64\usr\bin
+  C:\msys64\mingw64\bin
+使用pacman安装boost
+
+
+
+
+MSYS2 is a software distro and building platform for Windows
+--------------------------
+https://www.msys2.org/
+
 
 .vscode\c_cpp_properties.json
 --------------------------
@@ -34,6 +59,9 @@ GCC & clang on windows with Visual Studio Code + bash terminal + debugging!
     "version": 4
 }
 </pre>
+
+配置vscode
+--------------------------
 
 launch.json
 --------------------------
