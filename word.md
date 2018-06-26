@@ -18,7 +18,7 @@ For Each oRev In ActiveDocument.Revisions
   If oRev.Type = wdRevisionInsert Then
   oRev.Range.Font.Color = wdColorBlue
   End If
-  oRev.Accept
+  'oRev.Accept 接受修订
 Next
 End Sub
 
