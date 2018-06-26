@@ -15,10 +15,9 @@ then perhaps something like this:
 Sub ScratchMaco()
 Dim oRev As Revision
 For Each oRev In ActiveDocument.Revisions
-If oRev.Type = wdRevisionInsert Then
-oRev.Range.Font.Color = wdColorBlue
-End If
-oRev.Accept
+  If oRev.Type = wdRevisionInsert Then
+  oRev.Range.Font.Color = wdColorBlue
+  End If
 Next
 End Sub
 
