@@ -140,6 +140,82 @@ code --install-extension 插件名称
 https://marketplace.visualstudio.com/,  点击想要的插件， 点击  Download Extension 下载插件
 
 
+key binding with vim simulator
+----------------------------------------
+<pre>
+{
+    "git.ignoreMissingGitWarning": true,
+    "window.zoomLevel": 0,
+    "find.all.references.engine": "ag",
+    "find.all.references.options": "--ignore-dir=lib",
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after":["<Esc>"]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+    ],
+    "vim.normalModeKeyBindings": [
+        // jump to declaration
+        {
+            "before": ["<leader>", "j", "d"],
+            "commands": ["C_Cpp.GoToDeclaration"]
+        },
+        // jump to definition 
+        {
+            "before": ["<leader>", "j", "j"],
+            "commands": ["editor.action.goToDeclaration"]
+
+        },
+        // switch source header
+        {
+            "before": ["<leader>", "j", "s"],
+             "commands": ["C_Cpp.SwitchHeaderSource"]
+
+        },
+        // file
+        {
+            "before": ["<leader>", "f", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        // switch to file
+        {
+            "before": ["<leader>", "f", "n"],
+            "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
+        },
+        {
+            "before": ["<leader>", "f", "p"],
+            "commands": ["workbench.action.openPreviousRecentlyUsedEditorInGroup"]
+        },
+        // switch to tab 
+        {
+            "before": ["<leader>", "t", "n"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", "t", "p"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["<leader>", "g", "b"],
+            "commands": ["workbench.action.navigateBack"]
+        },
+        {
+            "before": ["<leader>", "g", "f"],
+            "commands": ["workbench.action.navigateForward"]
+        }
+    ],
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/3rd": true
+    }
+}
+</pre>
+
+
 编译程序
 ---------------------------
 
