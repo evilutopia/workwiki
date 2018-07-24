@@ -3,6 +3,7 @@
     "window.zoomLevel": 0,
     "find.all.references.engine": "ag",
     "find.all.references.options": "--ignore-dir=lib",
+    "vim.useSystemClipboard": true,
     "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
         {
@@ -13,6 +14,12 @@
     "vim.insertModeKeyBindingsNonRecursive": [
     ],
     "vim.normalModeKeyBindings": [
+        // -- navigation in code
+        // jump to bracket 
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": ["editor.action.jumpToBracket"]
+        },
         // jump to declaration
         {
             "before": ["<leader>", "j", "d"],
@@ -30,12 +37,13 @@
              "commands": ["C_Cpp.SwitchHeaderSource"]
 
         },
-        // file
+        // -- file management 
+        // save file
         {
             "before": ["<leader>", "f", "w"],
             "commands": ["workbench.action.files.save"]
         },
-        // switch to file
+        // switch to recent open file
         {
             "before": ["<leader>", "f", "n"],
             "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
@@ -44,6 +52,11 @@
             "before": ["<leader>", "f", "p"],
             "commands": ["workbench.action.openPreviousRecentlyUsedEditorInGroup"]
         },
+        {
+            "before": ["<leader>", "f", "s"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        // -- tag switch(alt+Num) 
         // switch to tab 
         {
             "before": ["<leader>", "t", "n"],
@@ -60,11 +73,29 @@
         {
             "before": ["<leader>", "g", "f"],
             "commands": ["workbench.action.navigateForward"]
+        },
+        // -- code format 
+        {
+            "before": ["<leader>", "c", "c"],
+            "commands": ["editor.action.commentLine"]
+        }
+
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "c", "b"],
+            "commands": ["editor.action.blockComment"]
         }
     ],
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
+        // resolve search slowly
         "**/3rd": true
-    }
+    },
+    // -- scheme
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontSize": 18,
+    // resolve the menu bar is inconsistent with theme
+    "window.titleBarStyle": "custom"
 }
