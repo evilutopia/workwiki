@@ -143,6 +143,14 @@ https://marketplace.visualstudio.com/,  点击想要的插件， 点击  Downloa
 
 Using cmder as integrated shell in VSCode
 ---------------------------
+<pre>
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/k C:\\Program Files (x86)\\Cmder\\vendor\\init.bat"
+    ]
+}
+</pre>
 
 
 编译程序
