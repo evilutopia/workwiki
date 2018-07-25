@@ -150,7 +150,11 @@ Using cmder as integrated shell in VSCode
         "/k C:\\Program Files (x86)\\Cmder\\vendor\\init.bat"
     ]
 }
+
+https://amreldib.com/blog/CustomizeWindowsCmderPrompt/
 </pre>
+
+
 
 
 编译程序
