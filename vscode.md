@@ -140,8 +140,15 @@ code --install-extension 插件名称
 https://marketplace.visualstudio.com/,  点击想要的插件， 点击  Download Extension 下载插件
 
 
+
+Using cmder as integrated shell in VSCode
+---------------------------
+
+
 编译程序
 ---------------------------
+https://winsmarts.com/using-cmder-as-integrated-shell-in-vscode-c3340714fe3c
+
 
 <pre>
 #include <iostream>
