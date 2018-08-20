@@ -1,8 +1,6 @@
 {
     "git.ignoreMissingGitWarning": true,
     "window.zoomLevel": 0,
-    "find.all.references.engine": "ag",
-    "find.all.references.options": "--ignore-dir=lib",
     "vim.useSystemClipboard": true,
     "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
@@ -24,6 +22,10 @@
         {
             "before": ["<leader>", "j", "d"],
             "commands": ["C_Cpp.GoToDeclaration"]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["C_Cpp.PeekDeclaration"]
         },
         // jump to definition 
         {
@@ -83,7 +85,7 @@
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": ["<leader>", "c", "b"],
+            "before": ["<leader>", "c", "c"],
             "commands": ["editor.action.blockComment"]
         }
     ],
@@ -95,7 +97,14 @@
     },
     // -- scheme
     "workbench.colorTheme": "Atom One Dark",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     // resolve the menu bar is inconsistent with theme
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.shellArgs.windows": [
+        "/k C:\\\"Program Files\"\\cmder\\vendor\\init.bat"
+    ],
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontFamily": "Consolas, 'DejaVu Sans Mono For Powerline'",
+    "terminal.integrated.rendererType": "dom",
+    "files.eol": "\n"
 }
