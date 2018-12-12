@@ -21,3 +21,7 @@ C++ network library
   folly tokenbucket
 
   https://github.com/facebook/folly/blob/master/folly/TokenBucket.h
+  
+- google-concurrency-library
+  
+  https://github.com/cyfdecyf/google-concurrency-library
