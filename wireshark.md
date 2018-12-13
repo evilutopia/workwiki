@@ -254,3 +254,8 @@ http.request.uri matches “.gif$” 匹配过滤HTTP的请求URI中含有”.gi
 注意区别：http.request.uri contains “.gif$” 与此不同，contains是包含字符串”.gif$”（5个字节）。匹配过滤HTTP的请求URI中含有”.gif$”字符串的http请求数据包（这里$是字符，不是结尾符）
 eth.addr[0:3]==00:1e:4f 搜索过滤MAC地址前3个字节是0x001e4f的数据包。
 </pre>
+
+wireshark how to
+----------------------------------------------------------
+
+http://packetbomb.com/category/text/
