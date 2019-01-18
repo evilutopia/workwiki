@@ -6,6 +6,11 @@ How to code review
 ------------------------------------
 https://blog.asana.com/2016/12/7-ways-to-uplevel-your-code-review-skills/
 
+https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/
+
+https://mtlynch.io/human-code-reviews-1/
+https://mtlynch.io/human-code-reviews-2/
+
 1、 看到数组或是索引， 检查越界
 
 
