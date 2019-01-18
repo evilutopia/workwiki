@@ -1,4 +1,11 @@
 
+How to code review
+====================================
+
+参考资料
+------------------------------------
+https://blog.asana.com/2016/12/7-ways-to-uplevel-your-code-review-skills/
+
 1、 看到数组或是索引， 检查越界
 
 
