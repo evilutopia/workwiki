@@ -223,9 +223,12 @@ https://stackoverflow.com/questions/492374/g-in-what-order-should-static-and-dyn
 </pre>
 
 
-Frequently asked questions
+
+
+
+user snippet
 -----------------------------
-https://github.com/Microsoft/vscode-cpptools/blob/master/Documentation/LanguageServer/FAQ.md#what-is-the-difference-between-includepath-and-browsepath-in-c_cpp_propertiesjson
+https://code.visualstudio.com/docs/editor/userdefinedsnippets
 
 
 参考资料
