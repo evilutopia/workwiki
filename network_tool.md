@@ -18,6 +18,7 @@ netstat
 
 #  udp to tcp 
 nc -v -u -l -p 3333 | nc -v 127.0.0.1 50000
+
 socat -v UDP-LISTEN:3333,fork TCP:localhost:50000
 
 
