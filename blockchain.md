@@ -11,6 +11,12 @@ Hash->HashList->MerkleTree
 https://en.wikipedia.org/wiki/Merkle_tree
 
 
+Bicoin vs ethereum vs fabric vs corda
+-----------------------------------
+
+http://explore-ip.com/2017_Comparison-of-Ethereum-Hyperledger-Corda.pdf
+
+
 
 开源项目
 -----------------------------------
