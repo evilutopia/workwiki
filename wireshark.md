@@ -10,6 +10,10 @@ wireshark过滤规则及使用方法
 
 参考资料
 --------------------------------------------------------------
+操作样例
+
+https://www.thegeekstuff.com/2009/02/editcap-guide-11-examples-to-handle-network-packet-dumps-effectively/
+
 <pre>
 https://blog.csdn.net/wojiaopanpan/article/details/69944970
 wireshark 基本语法，基本使用方法，及包过滤规则：
