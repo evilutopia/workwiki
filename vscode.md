@@ -133,6 +133,11 @@ https://msdn.microsoft.com/en-us/library/ms235639.aspx
 https://www.zhihu.com/question/30315894
 
 
+Excluding Dirs
+--------------------------
+https://stackoverflow.com/questions/30140112/how-do-i-hide-certain-files-from-the-sidebar-in-visual-studio-code
+
+
 install extention offline
 ----------------------------------------
 code --install-extension 插件名称
