@@ -260,4 +260,24 @@ https://code.visualstudio.com/docs/editor/userdefinedsnippets
 -----------------------------
 https://www.youtube.com/watch?v=TLh--v8OxHE&t=910s&list=PL18844R4xSKTZqTPzz9ZbXiWrcsXsBc9d&index=2
 
+常用插件
+-----------------------------
+CodeIf
+local history
+Partial Diff
+TODO Tree
+Better Comments
+Bracket Pair Colorizer
+Better Align（Ctrl+Shift+p输入“Align”）
+change-case（Ctrl+Shift+p输入“change）
+vim
+Text Power  Tools
+Markdown All in One
+TextMaker(Highlighter)
+HexEditor
+Draw.io
+Diff Folders
+Doxygeb Dicynebtatuib Geberatir
+
+
 
